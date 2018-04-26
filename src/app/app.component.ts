@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
     title = 'app';
+    addCard(cardText: string) {
+        this.cards.push({text: cardText});
+    }
     public cards: Array<any> = [
         {text: 'Card 1'},
         {text: 'Card 2'},
